@@ -6,48 +6,40 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class DictionaryView extends Application {
-
     private DictionaryController controller;
 
-    @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage window) {
         // Initialize the controller
         controller = new DictionaryController();
 
         // Create UI components
+        Label meaningLabel = new Label("Welcome to the dictionary!\n Search for a word:\n");
         TextField wordTextField = new TextField();
         Button searchButton = new Button("Search");
-        Label meaningLabel = new Label();
+
 
         // Event handler for the search button
         searchButton.setOnAction(event -> {
             String word = wordTextField.getText().trim();
-            if (!word.isEmpty()) {
-                String meaning = controller.searchWord(word);
-                if (meaning != null) {
-                    meaningLabel.setText(meaning);
-                } else {
-                    meaningLabel.setText("Word not found in dictionary.");
-                }
-            } else {
-                meaningLabel.setText("Please enter a word.");
-            }
+            String meaning = controller.searchWord(word);
+            meaningLabel.setText(meaning);
         });
 
         // Layout
-        FlowPane root = new FlowPane();
-        root.getChildren().addAll(wordTextField, searchButton, meaningLabel);
+        VBox root = new VBox();
+        root.getChildren().addAll( meaningLabel, wordTextField, searchButton);
 
         // Scene
         Scene scene = new Scene(root, 300, 100);
 
         // Stage
-        primaryStage.setTitle("Virtual Dictionary");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        window.setTitle("Virtual Dictionary");
+        window.setScene(scene);
+        window.show();
     }
 
     public static void main(String[] args) {

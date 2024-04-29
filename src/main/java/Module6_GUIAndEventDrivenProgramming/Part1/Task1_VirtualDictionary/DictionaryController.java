@@ -13,6 +13,16 @@ public class DictionaryController {
     }
 
     public String searchWord(String word) {
-        return dictionary.searchWord(word);
+        String lowercaseWord = word.toLowerCase(); // Convert user input to lowercase before search
+        if (lowercaseWord == null || lowercaseWord.trim().isEmpty()) {
+            return "Please enter a word.";
+        } else {
+            String meaning = dictionary.searchWord(lowercaseWord);
+            if (meaning != null) {
+                return meaning;
+            } else {
+                return "Word not found in dictionary.";
+            }
+        }
     }
 }
