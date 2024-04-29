@@ -1,8 +1,7 @@
-package Module6_GUIAndEventDrivenProgramming.Part1.Task1_VirtualDictionary;
+package Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
 
 public class DictionaryController {
     private Dictionary dictionary;
-
     public DictionaryController() {
         // Initialize the dictionary
         dictionary = new Dictionary();

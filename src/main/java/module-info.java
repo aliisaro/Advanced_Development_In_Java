@@ -6,8 +6,12 @@ module com.example.demo {
     requires org.testng;
 
 
-    opens Module6_GUIAndEventDrivenProgramming.Part1.Task1_VirtualDictionary to javafx.graphics;
-    exports Module6_GUIAndEventDrivenProgramming.Part1.Task1_VirtualDictionary;
+    exports Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
+    opens Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary to javafx.graphics;
+
+    exports Module5_MultithreadingAndUnitTesting.Part4.Task1_PalindromeChecker;
+    exports Module5_MultithreadingAndUnitTesting.Part4.Task2_ShoppingCart;
+
 }
 
 

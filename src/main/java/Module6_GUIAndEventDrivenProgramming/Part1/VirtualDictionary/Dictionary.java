@@ -1,4 +1,4 @@
-package Module6_GUIAndEventDrivenProgramming.Part1.Task1_VirtualDictionary;
+package Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
 
 import java.util.HashMap;
 

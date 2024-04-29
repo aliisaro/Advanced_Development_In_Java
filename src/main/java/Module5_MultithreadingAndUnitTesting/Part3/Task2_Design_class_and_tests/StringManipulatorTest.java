@@ -1,7 +1,6 @@
 package Module5_MultithreadingAndUnitTesting.Part3.Task2_Design_class_and_tests;
 
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
