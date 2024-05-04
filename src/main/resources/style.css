@@ -1,0 +1,12 @@
+.root {
+    -fx-background-color: #c4eaec;
+    -fx-padding: 15px;
+    -fx-font-size: 14px;
+    -fx-font-family: "cursive";
+}
+
+.button {
+    -fx-background-color: #ff9ac3;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+}

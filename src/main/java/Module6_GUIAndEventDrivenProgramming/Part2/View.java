@@ -3,24 +3,52 @@ package Module6_GUIAndEventDrivenProgramming.Part2;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 public class View extends Application {
+    private CurrencyConverterController controller;
     public void start(Stage window) {
-
+        // Initialize controller
+        controller = new CurrencyConverterController();
 
         // Layout
         VBox root = new VBox();
-        root.getChildren().addAll();
+        root.setSpacing(10);
+
+        Label title1 = new Label("Choose the currency to convert: ");
+        ChoiceBox<String> from = new ChoiceBox<>();
+        from.getItems().addAll("USD", "EUR", "GBP", "JPY", "SEK");
+
+        Label title2 = new Label("Choose the currency to convert to: ");
+        ChoiceBox<String> to = new ChoiceBox<>();
+        to.getItems().addAll("USD", "EUR", "GBP", "JPY", "SEK");
+
+        Label toConvert = new Label("Amount to convert: ");
+        TextField input = new TextField();
+
+        Label converted = new Label("Converted amount: ");
+        TextField output = new TextField();
+
+        Label errorField = new Label();
+        errorField.setStyle("-fx-text-fill: red;");
+
+        Button convert = new Button("Convert");
+        convert.setOnAction(event -> controller.convert(input.getText(), from.getValue(), to.getValue(), output, errorField));
+
+        // Add all elements to root
+        root.getChildren().addAll(title1, from, title2, to, toConvert, input, converted, output, errorField, convert);
 
         // Scene
-        Scene scene = new Scene(root, 300,  100);
+        Scene view = new Scene(root, 410,  400);
+
+        view.getStylesheets().add("style.css");
 
         // Stage
-        window.setTitle("Virtual Dictionary");
-        window.setScene(scene);
+        window.setTitle("Currency Converter");
+        window.setScene(view);
         window.show();
     }
     public static void main(String[] args) {
