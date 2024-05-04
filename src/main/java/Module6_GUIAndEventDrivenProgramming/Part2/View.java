@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
 public class View extends Application {
     private CurrencyConverterController controller;
     public void start(Stage window) {
