@@ -25,7 +25,7 @@ public class CurrencyConverterController {
                 double result = model.convert(amount, fromCurrency, toCurrency);
                 output.setText(String.format("%.2f", result));
             } catch (NumberFormatException e) {
-                errorField.setText("Please enter an amount to convert.");
+                errorField.setText("Please enter an amount to convert in number format.");
             }
         }
     }

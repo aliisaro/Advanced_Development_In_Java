@@ -44,7 +44,7 @@ public class View extends Application {
         // Scene
         Scene view = new Scene(root, 410,  400);
 
-        view.getStylesheets().add("style.css");
+        view.getStylesheets().add("Module6Part2.css");
 
         // Stage
         window.setTitle("Currency Converter");
