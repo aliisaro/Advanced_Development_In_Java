@@ -1,14 +1,13 @@
-package Module6_GUIAndEventDrivenProgramming.Part3;
+package Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet;
 
-
-public class Pet {
+public class PetModel {
     // Properties
     private int x;
     private int y;
     private static final int GRID_SIZE = 10;
 
     // Constructor
-    public Pet(int x, int y) {
+    public PetModel(int x, int y) {
         this.x = x;
         this.y = y;
     }

@@ -1,10 +1,10 @@
-package Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
+package Module6_GUIAndEventDrivenProgramming.Part1_VirtualDictionary;
 
 public class DictionaryController {
-    private Dictionary dictionary;
+    private DictionaryModel dictionary;
     public DictionaryController() {
         // Initialize the dictionary
-        dictionary = new Dictionary();
+        dictionary = new DictionaryModel();
         // Populate dictionary with some initial words (temporary)
         dictionary.addWord("Dog", "A mammal part of the canine kind.");
         dictionary.addWord("Cat", "A small domesticated carnivorous mammal with soft fur.");

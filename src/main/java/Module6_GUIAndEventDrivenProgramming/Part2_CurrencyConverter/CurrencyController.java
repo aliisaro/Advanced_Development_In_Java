@@ -1,18 +1,18 @@
-package Module6_GUIAndEventDrivenProgramming.Part2;
+package Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class CurrencyConverterController {
+public class CurrencyController {
     // Properties
     private TextField amountField;
     private TextField resultField;
     private Label errorField;
-    private CurrencyConverterModel model;
+    private CurrencyModel model;
 
     // Constructor
-    public CurrencyConverterController() {
-        this.model = new CurrencyConverterModel();
+    public CurrencyController() {
+        this.model = new CurrencyModel();
     }
 
     // Method to convert currency

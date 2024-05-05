@@ -1,8 +1,8 @@
-package Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
+package Module6_GUIAndEventDrivenProgramming.Part1_VirtualDictionary;
 
 import java.util.HashMap;
 
-public class Dictionary {
+public class DictionaryModel {
     private HashMap<String, String> dictionary = new HashMap<>();
 
     public void addWord(String word, String meaning) {

@@ -1,4 +1,4 @@
-package Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary;
+package Module6_GUIAndEventDrivenProgramming.Part1_VirtualDictionary;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

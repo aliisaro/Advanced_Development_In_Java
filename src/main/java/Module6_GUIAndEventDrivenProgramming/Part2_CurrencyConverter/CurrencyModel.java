@@ -1,14 +1,14 @@
-package Module6_GUIAndEventDrivenProgramming.Part2;
+package Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class CurrencyConverterModel {
+public class CurrencyModel {
     // Properties
     private Map<String, Double> exchangeRates;
 
     // Constructor
-    public CurrencyConverterModel() {
+    public CurrencyModel() {
         // Initialize exchange rates
         exchangeRates = new HashMap<>();
         exchangeRates.put("USD", 1.0);

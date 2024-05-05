@@ -5,7 +5,7 @@ module your.module.name {
     requires org.testng;
     // Add other JavaFX modules if needed
 
-    exports Module6_GUIAndEventDrivenProgramming.Part1.VirtualDictionary to javafx.graphics;
-    exports Module6_GUIAndEventDrivenProgramming.Part2 to javafx.graphics;
-    exports Module6_GUIAndEventDrivenProgramming.Part3 to javafx.graphics;
+    exports Module6_GUIAndEventDrivenProgramming.Part1_VirtualDictionary to javafx.graphics;
+    exports Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter to javafx.graphics;
+    exports Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet to javafx.graphics;
 }

@@ -1,4 +1,4 @@
-package Module6_GUIAndEventDrivenProgramming.Part2;
+package Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -9,11 +9,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class View extends Application {
-    private CurrencyConverterController controller;
+public class CurrencyView extends Application {
+    private CurrencyController controller;
     public void start(Stage window) {
         // Initialize controller
-        controller = new CurrencyConverterController();
+        controller = new CurrencyController();
 
         // Layout
         VBox root = new VBox();

@@ -1,4 +1,4 @@
-package Module6_GUIAndEventDrivenProgramming.Part3;
+package Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -8,12 +8,12 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class View extends Application {
+public class PetView extends Application {
     private static final int CELL_SIZE = 40;
     private Canvas canvas;
     private GraphicsContext gc;
-    private Controller controller;
-    private Image petImage = new Image("file:src/main/java/Module6_GUIAndEventDrivenProgramming/Part3/doggy.jpg");
+    private PetController controller;
+    private Image petImage = new Image("file:src/main/java/Module6_GUIAndEventDrivenProgramming/Part3_VirtualPet/doggy.jpg");
     private static final int DELAY = 120; // Delay in milliseconds
 
     public static void main(String[] args) {
@@ -22,8 +22,8 @@ public class View extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Pet pet = new Pet(0, 0); // Create an instance of Pet
-        controller = new Controller(pet); // Pass pet to the Controller constructor
+        PetModel pet = new PetModel(0, 0); // Create an instance of Pet
+        controller = new PetController(pet); // Pass pet to the Controller constructor
         int gridSize = controller.getGridSize();
         int canvasSize = gridSize * CELL_SIZE;
 

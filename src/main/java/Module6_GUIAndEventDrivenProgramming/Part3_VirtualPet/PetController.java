@@ -1,11 +1,11 @@
-package Module6_GUIAndEventDrivenProgramming.Part3;
+package Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet;
 
-public class Controller {
+public class PetController {
     // Properties
-    private Pet pet;
+    private PetModel pet;
 
     // Constructor
-    public Controller(Pet pet) {
+    public PetController(PetModel pet) {
         this.pet = pet;
     }
 
