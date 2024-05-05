@@ -13,7 +13,7 @@ public class View extends Application {
     private Canvas canvas;
     private GraphicsContext gc;
     private Controller controller;
-    private Image petImage = new Image("file:doggy.jpg");
+    private Image petImage = new Image("file:src/main/java/Module6_GUIAndEventDrivenProgramming/Part3/doggy.jpg");
     private static final int DELAY = 120; // Delay in milliseconds
 
     public static void main(String[] args) {
