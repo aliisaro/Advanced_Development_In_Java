@@ -21,11 +21,11 @@ public class CurrencyView extends Application {
 
         Label title1 = new Label("Choose the currency to convert: ");
         ChoiceBox<String> from = new ChoiceBox<>();
-        from.getItems().addAll("USD", "EUR", "GBP", "JPY", "SEK");
+        from.getItems().addAll("EUR", "USD", "GBP", "JPY", "SEK");
 
         Label title2 = new Label("Choose the currency to convert to: ");
         ChoiceBox<String> to = new ChoiceBox<>();
-        to.getItems().addAll("USD", "EUR", "GBP", "JPY", "SEK");
+        from.getItems().addAll("EUR", "USD", "GBP", "JPY", "SEK");
 
         Label toConvert = new Label("Amount to convert: ");
         TextField input = new TextField();
