@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Module6_GUIAndEventDrivenProgramming.Part4_Notebook.NotebookController">
+    <children>
+        <!-- Add Note Section -->
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" text="Add Note">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titleField" focusTraversable="false" promptText="Write the title of your note here..." />
+        <TextArea fx:id="contentArea" focusTraversable="false" promptText="Write your note here.." />
+        <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#addNote" text="Add" />
+        <Label fx:id="noteAddedLabel" prefHeight="50.0" textFill="green" visible="false" />
+        <Separator prefHeight="30.0" prefWidth="400.0" />
+
+        <!-- Search Section -->
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" text="Search For Note">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <HBox>
+            <TextField fx:id="findNoteField" focusTraversable="false" prefHeight="26.0" prefWidth="348.0" promptText="Write the title of note you're searching here..." />
+            <Button fx:id="SearchButton" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#getNote" text="Search" />
+        </HBox>
+        <Label fx:id="notFoundLabel" prefHeight="50.0" text="Note not found!" textFill="red" visible="false" />
+        <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="400.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="contentLabel" alignment="TOP_LEFT" contentDisplay="TOP" textAlignment="RIGHT" />
+    </children>
+</VBox>

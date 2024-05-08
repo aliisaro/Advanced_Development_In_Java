@@ -1,5 +1,6 @@
 package Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class CurrencyModel {
@@ -9,6 +10,7 @@ public class CurrencyModel {
     // Constructor
     public CurrencyModel() {
         // Initialize exchange rates
+        exchangeRates = new HashMap<>();
         exchangeRates.put("EUR", 1.0);
         exchangeRates.put("USD", 1.18);
         exchangeRates.put("GBP", 0.85);

@@ -15,7 +15,6 @@ public class PetView extends Application {
     private PetController controller;
     private Image petImage = new Image("file:src/main/java/Module6_GUIAndEventDrivenProgramming/Part3_VirtualPet/doggy.jpg");
     private static final int DELAY = 120; // Delay in milliseconds
-
     public static void main(String[] args) {
         launch(args);
     }
