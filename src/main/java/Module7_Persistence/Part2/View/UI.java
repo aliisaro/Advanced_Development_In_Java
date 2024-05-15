@@ -1,6 +1,7 @@
-package Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter;
+package Module7_Persistence.Part2.View;
 
-import javafx.application.Application;
+import Module7_Persistence.Part2.Controller.Controller;
+import Module7_Persistence.Part2.Datasource.MariaDbConnection;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -8,12 +9,16 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import java.sql.Connection;
 
-public class CurrencyView extends Application {
-    private CurrencyController controller;
+public class UI extends javafx.application.Application {
+    private Controller controller;
     public void start(Stage window) {
+        // database connection
+        Connection connection = MariaDbConnection.getConnection();
+
         // Initialize controller
-        controller = new CurrencyController();
+        controller = new Controller(connection);
 
         // Layout
         VBox root = new VBox();
@@ -48,7 +53,7 @@ public class CurrencyView extends Application {
         view.getStylesheets().add("CurrencyConverter.css");
 
         // Stage
-        window.setTitle("Currency Converter");
+        window.setTitle("Currency Converter (connected to MariaDB)");
         window.setScene(view);
         window.show();
     }
