@@ -1,6 +1,6 @@
-package Module7_Persistence.Part2.DAO;
+package Module7_Persistence.Part2_EnhancedCurrencyConverter.DAO;
 
-import Module7_Persistence.Part2.Datasource.MariaDbConnection;
+import Module7_Persistence.Part2_EnhancedCurrencyConverter.Datasource.MariaDbConnection;
 import java.sql.Connection;
 import java.sql.SQLException;
 

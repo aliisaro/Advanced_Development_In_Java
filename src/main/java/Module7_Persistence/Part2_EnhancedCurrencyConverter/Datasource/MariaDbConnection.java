@@ -1,4 +1,4 @@
-package Module7_Persistence.Part2.Datasource;
+package Module7_Persistence.Part2_EnhancedCurrencyConverter.Datasource;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

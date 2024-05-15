@@ -12,7 +12,7 @@ module Module6_GUIAndEventDrivenProgramming {
     exports Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter to javafx.graphics;
     exports Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet to javafx.graphics;
     exports Module6_GUIAndEventDrivenProgramming.Part4_Notebook to javafx.fxml, javafx.graphics;
-    exports Module7_Persistence.Part2.View;
+    exports Module7_Persistence.Part2_EnhancedCurrencyConverter.View;
 
 }
 

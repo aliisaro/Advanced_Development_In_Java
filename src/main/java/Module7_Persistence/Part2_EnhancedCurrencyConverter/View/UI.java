@@ -1,7 +1,7 @@
-package Module7_Persistence.Part2.View;
+package Module7_Persistence.Part2_EnhancedCurrencyConverter.View;
 
-import Module7_Persistence.Part2.Controller.Controller;
-import Module7_Persistence.Part2.Datasource.MariaDbConnection;
+import Module7_Persistence.Part2_EnhancedCurrencyConverter.Controller.Controller;
+import Module7_Persistence.Part2_EnhancedCurrencyConverter.Datasource.MariaDbConnection;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;

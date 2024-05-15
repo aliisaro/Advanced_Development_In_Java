@@ -1,6 +1,6 @@
-package Module7_Persistence.Part2.Controller;
+package Module7_Persistence.Part2_EnhancedCurrencyConverter.Controller;
 
-import Module7_Persistence.Part2.Entity.Model;
+import Module7_Persistence.Part2_EnhancedCurrencyConverter.Entity.Model;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 

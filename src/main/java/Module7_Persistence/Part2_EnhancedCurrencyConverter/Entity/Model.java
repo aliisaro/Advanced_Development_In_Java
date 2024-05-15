@@ -1,4 +1,4 @@
-package Module7_Persistence.Part2.Entity;
+package Module7_Persistence.Part2_EnhancedCurrencyConverter.Entity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
