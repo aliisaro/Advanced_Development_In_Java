@@ -4,27 +4,27 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Person {
+public class Task1_Person {
     // properties
     private String name;
     private int age;
     private String city;
 
     // constructor
-    public Person(String name, int age, String city) {
+    public Task1_Person(String name, int age, String city) {
         this.name = name;
         this.age = age;
         this.city = city;
     }
 
     // list of person objects
-    static List<Person> persons = Arrays.asList(
-            new Person("John", 30, "New York"),
-            new Person("Jane", 25, "Los Angeles"),
-            new Person("Jack", 40, "Chicago"),
-            new Person("Jill", 35, "New York"),
-            new Person("Joe", 20, "Los Angeles"),
-            new Person("Jenny", 45, "Chicago")
+    static List<Task1_Person> persons = Arrays.asList(
+            new Task1_Person("John", 30, "New York"),
+            new Task1_Person("Jane", 25, "Los Angeles"),
+            new Task1_Person("Jack", 40, "Chicago"),
+            new Task1_Person("Jill", 35, "New York"),
+            new Task1_Person("Joe", 20, "Los Angeles"),
+            new Task1_Person("Jenny", 45, "Chicago")
     );
 
     public int getAge() {
@@ -33,7 +33,7 @@ public class Person {
 
     // sort the list by age in ascending order with comparator interface
     public static void sortPersonsByAge() {
-        persons.sort(Comparator.comparingInt(Person::getAge));
+        persons.sort(Comparator.comparingInt(Task1_Person::getAge));
         persons.forEach(p -> System.out.println(p.name + ", " + p.age + ", " + p.city));
     }
 
