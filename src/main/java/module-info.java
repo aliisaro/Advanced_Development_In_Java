@@ -5,6 +5,7 @@ module Module6_GUIAndEventDrivenProgramming {
     requires org.testng;
     requires javafx.graphics;
     requires java.sql;
+    requires java.persistence;
 
     // Add other JavaFX modules if needed
 
@@ -12,8 +13,6 @@ module Module6_GUIAndEventDrivenProgramming {
     exports Module6_GUIAndEventDrivenProgramming.Part2_CurrencyConverter to javafx.graphics;
     exports Module6_GUIAndEventDrivenProgramming.Part3_VirtualPet to javafx.graphics;
     exports Module6_GUIAndEventDrivenProgramming.Part4_Notebook to javafx.fxml, javafx.graphics;
-    exports Module7_Persistence.Part2_EnhancedCurrencyConverter.View;
+    exports Module7_Persistence.Part3_JPA_CurrencyConverter.View to javafx.graphics;
 
 }
-
-
